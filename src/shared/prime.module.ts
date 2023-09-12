@@ -5,18 +5,20 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ChipModule } from 'primeng/chip';
-
+import { FieldsetModule } from 'primeng/fieldset'
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    FieldsetModule
   ],
   exports: [
     ToolbarModule,
     ButtonModule,
     AvatarModule,
     CardModule,
-    ChipModule
+    ChipModule,
+    FieldsetModule
   ]
 })
 export class PrimeModule { }
