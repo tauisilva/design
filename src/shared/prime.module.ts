@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import { AvatarModule } from 'primeng/avatar';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { ToolbarModule } from 'primeng/toolbar';
 import { ChipModule } from 'primeng/chip';
-import { FieldsetModule } from 'primeng/fieldset'
+import { FieldsetModule } from 'primeng/fieldset';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { ToolbarModule } from 'primeng/toolbar';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -13,12 +15,13 @@ import { FieldsetModule } from 'primeng/fieldset'
     FieldsetModule
   ],
   exports: [
-    ToolbarModule,
-    ButtonModule,
     AvatarModule,
+    ButtonModule,
     CardModule,
     ChipModule,
-    FieldsetModule
+    FieldsetModule,
+    SpeedDialModule,
+    ToolbarModule
   ]
 })
 export class PrimeModule { }
